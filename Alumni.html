@@ -16,12 +16,18 @@
       background-color: rgb(154, 30, 30);
       
     }
+
+    li.indicator-item.active{
+      background-color: white !important;
+    }
   </style>
+  <header>
    <nav class="z-depth-0 transparent">
     <div class="container">
       <div class="nav-wrapper">
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <a href="#" class="brand-logo" style="font-size: 25px;">Clegg Girls Senior High School</a>
+        <a href="#" class="brand-logo hide-on-med-and-down" style="font-size: 25px;">Clegg Girls Senior High School</a>
+        <a href="#" class="brand-logo hide-on-large-only" style="padding: 0px !important; font-size: 16px; width: 100%; text-align: center;">Clegg Girls Senior High School</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -37,10 +43,24 @@
       <li><a href="admission.html">Admission</a></li>
       <li><a href="Alumni.html">GirlsCoding Alumni</a></li>
     </ul>
-            
+
+    <div class="slider hide-on-med-and-down" >
+      <ul class="slides">
+              
+          <li><img src="img/merlin.jpg" alt="" style="width: 100% !important; height: 560px !important"></li>
+      </ul>
+  </div>
+   
+  <div class=" hide-on-large-only " height="500px !important">
+      <ul>  
+          <li><img src="img/merlin.jpg" alt="" style="width: 100% !important; height: 90% !important"></li>
+       
+      </ul>
+  </div>
+  </header>
 
 
-      <h4 class="center white-text ">Stars of Clegg Girl's Senior High School</h4>
+      <h4 class="center white-text " style="font-size: 18px;">Stars of Clegg Girl's Senior High School</h4>
 
   <div class="container">   
     <div class="row">
@@ -300,7 +320,7 @@
           <h5 class="white-text">Contact</h5>
           <p><span style="font-weight: bold;">Email:</span>  clegggirlsseniorhigh@gmail.com</p>
           <p>60/62 Modupe Johnson Crescent,</p>
-          <p>surulere,</p>
+          <p>Surulere,</p>
           <p>Lagos State.</p>
           
         </div>
@@ -340,6 +360,7 @@
       });
       $('.tooltipped').tooltip();
       $('.scrollspy').scrollSpy();
+      $('.slider').slider(); 
   
     });
   </script>
